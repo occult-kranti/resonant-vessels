@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Channeled Corpus — Resonant Vessels</title>
+<meta name="description" content="Folio X: an evidence-honest anatomy of a self-sealing belief system — the Bashar Index corpus instrumented by an expert panel: four pre-registered tests (one confirmed, three nulls at equal prominence), the documented slip chain, doctrine dynamics, and the frozen 2027 rubric.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html">Resonant <span class="amp">Vessels</span></a>
+  <nav aria-label="Archive sections">
+    <a href="figures.html">Figures</a>
+    <a href="alchemy.html">Alchemy</a>
+    <a href="harmonics.html">Harmonics</a>
+    <a href="tesla_files.html">Tesla Files</a>
+    <a href="government.html">Government</a>
+    <a href="experiments.html">Experiments</a>
+    <a href="teleportation.html">Teleportation</a>
+    <a href="lab.html">Laboratory</a>
+    <a href="bashar.html" class="active">Corpus</a>
+    <a href="roundtable.html">Roundtable</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" style="min-height:86vh;">
+  <div class="hero-media" aria-hidden="true">
+    <img src="assets/bashar_hero.png" alt="" loading="eager">
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-title-block">
+      <div class="line-a fade-in">
+        <h1>The Channeled</h1>
+      </div>
+      <div class="line-b fade-in">
+        <h1><span class="gold">Corpus</span></h1>
+      </div>
+      <div class="line-c fade-in">
+        <p class="hero-sub">Folio X · An evidence-honest anatomy of a self-sealing belief system. A modern channeled-prophecy corpus instrumented end to end: what it sells, what it promises, how its promises move, and what it would take to falsify them.</p>
+      </div>
+      <div class="hero-rule fade-in">Seed 42 · Four pre-registered tests · One confirmation, three nulls — displayed, not buried</div>
+    </div>
+  </div>
+</section>
+
+<!-- torn transition I : parchment over ink -->
+<div class="torn" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+    <polygon fill="#F4ECD8" points="0,64 0,34 47,26 96,40 158,22 210,44 268,18 330,38 402,24 470,46 540,20 610,42 690,26 760,48 830,16 905,40 980,28 1050,46 1120,22 1200,44 1270,26 1340,42 1400,30 1440,36 1440,64"/>
+  </svg>
+</div>
+
+<!-- ================= INTRO (light) ================= -->
+<section class="section-light" id="intro">
+  <div class="wrap">
+    <div class="house-rule fade-in" style="border-color:#9a7a1a; color:#7a5a10; margin-bottom:3.4rem;">
+      This archive never adjudicates the ontology claim<span class="hr-small" style="color:#8a4a22;">— whether &ldquo;Bashar&rdquo; exists is not measurable here, and is not measured. What is measured is the corpus. The panel&rsquo;s standing banner, binding on every doctrinal and predictive statement on this page: this work measures genre discipline, not truth.</span>
+    </div>
+
+    <span class="kicker fade-in">Folio X · The Channeled Corpus</span>
+    <div class="manifesto-grid">
+      <div class="lead-col fade-in">
+        <p class="lead-para">The previous folio built a laboratory for sound. This one turns the same machinery on a <span class="gold">living belief system</span>. Its subject is the <strong>Bashar Index</strong> — a public web archive documenting the teachings of &ldquo;Bashar,&rdquo; an entity channeled by Darryl Anka since 1983, and one of the most influential bodies of material in the contemporary contactee/disclosure subculture. It is unusual among such corpora in one decisive way: it makes <strong>dated claims</strong>.</p>
+        <p class="lead-para">An expert panel — a coder-expert and an advisor-skeptic who twice re-ran the code independently — audited the corpus across five rounds against a frozen snapshot (git HEAD <span style="font-family:var(--mono); font-size:0.85em;">cff3988</span>). Exactly four pre-registered primary tests, Holm-corrected as a family at &alpha; = 0.05; everything else shipped badged <strong>EXPLORATORY</strong>. The reporting layer refuses to serialize an unbadged p-value or a test without an effect size and confidence interval — enforcement is a build error, not a convention. Every number on this page is quoted from a committed result JSON, including the nulls.</p>
+        <p class="lead-para">The doctrine is a compact metaphysics — five laws, parallel realities, &ldquo;permission slips,&rdquo; vibrational frequency — wrapped around a single escalating promise: that humanity is approaching <span class="gold">open contact</span>, currently promised for the late 2020s. The corpus also teaches that its own predictions are &ldquo;readings of current energy,&rdquo; not fixed futures — a built-in epistemic escape hatch. The panel&rsquo;s question was whether that hatch is used <em>systematically</em>, and whether the system around it can be described honestly without ever adjudicating the prophecy itself. It can. This page is the anatomy.</p>
+      </div>
+      <div class="side-col fade-in">
+        <span class="mono-label" style="color:#8a4a22;">The Panel in Five Lines</span>
+        <p class="small" style="margin-top:1rem;">
+          <strong>Round 1</strong> — the program set: a Holm family of four primary tests, the quietism clause, and honesty machinery that makes unbadged claims a build error. <a href="#rec-r1">record →</a><br><br>
+          <strong>Round 2</strong> — the design frozen at commit <span style="font-family:var(--mono); font-size:0.8em;">cff3988</span> under advisor amendments: absolute freeze hash, the stated-n rule, a CI-based drift test, the tightened partial criterion, the 50-phrase escape-hatch lexicon locked. <a href="#rec-r2">record →</a><br><br>
+          <strong>Round 3</strong> — the pipeline built; the advisor&rsquo;s independent audit found four discrepancies and one conflation that had upgraded an uncontrolled p into a headline. <a href="#rec-r3">record →</a><br><br>
+          <strong>Round 4</strong> — every discrepancy fixed and reproduced digit-for-digit; the doctrine-dynamics module added; one new overprecision — a degenerate [1.0, 1.0] confidence interval — caught and scheduled for surgery. <a href="#rec-r4">record →</a><br><br>
+          <strong>Round 5</strong> — surgery applied, everything re-run clean at seed 42; the final audit returned <strong>NOT CERTIFIED</strong> on five blockers; all five fixed and re-verified against the artifacts: <strong>CERTIFIED</strong>. <a href="#rec-r5">record →</a>
+        </p>
+        <hr class="gold-rule">
+        <p class="small dim">The standing instruction, verbatim from the final report: <em>no statistic that is not serialized in the evidence layer with its provenance block; no figure carrying a p-value in its title except with its badge.</em></p>
+      </div>
+    </div>
+
+    <!-- ============ PANEL RECORD ============ -->
+    <div id="panel-record" style="margin-top:4rem;">
+      <span class="kicker">The Panel Record · Five Rounds, Two Loops Each</span>
+      <h2 class="display-md" style="margin-bottom:2rem;">What each round settled</h2>
+
+      <section id="rec-r1">
+        <h4 style="font-family:var(--mono); font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:#7a5a10; margin:1.6rem 0 0.5rem;">Round 1 — The Program</h4>
+        <p class="small">The panel framed the corpus as an object of measurement, not a claim to adjudicate: a Holm family of four primary tests (P1 conditionality ratchet, P2 window drift, P3 demand segmentation, P4 disclosure trend), every other statistic badged EXPLORATORY, grades attached per artifact (Frontier for digest-level, Speculative for transcript-level), and the quietism banner made standing law. Loop 2 set the enforcement rule that defines everything after: the reporting layer must <em>refuse</em> to serialize a p-value without its badge, effect size, and interval.</p>
+      </section>
+      <section id="rec-r2">
+        <h4 style="font-family:var(--mono); font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:#7a5a10; margin:1.6rem 0 0.5rem;">Round 2 — The Freeze</h4>
+        <p class="small">Design, lexicon, and rubric frozen under advisor amendments, pinned to an absolute freeze hash (<span style="font-family:var(--mono); font-size:0.85em;">cff3988</span>): the 50-phrase escape-hatch lexicon (&ldquo;probable,&rdquo; &ldquo;window,&rdquo; &ldquo;up to you,&rdquo; &ldquo;subject to change,&rdquo; …) locked before the first scoring run; the stated-n rule (n declared before interpretation; below n = 10, directional + CI only — <em>the ledger is the finding, the statistic is the annotation</em>); P2 made CI-based rather than a p-value test; the 2027 rubric&rsquo;s partial criterion tightened (explicit non-human-origin language, not &ldquo;unknown&rdquo;; instrument classes, not cameras).</p>
+      </section>
+      <section id="rec-r3">
+        <h4 style="font-family:var(--mono); font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:#7a5a10; margin:1.6rem 0 0.5rem;">Round 3 — The Audit Finds Four Discrepancies</h4>
+        <p class="small">The pipeline implemented; the advisor re-ran it independently and found: a doubled exclusion count (76 reported vs. the true <strong>38</strong> title-year-only rows); a silently swallowed exception that had dropped the E5 question-level cross-check entirely; a provenance block listing files the module never read; and a residual-direction sentence that contradicted its own figure (F4). Plus the E2/E3 conflation: an <em>uncontrolled</em> Spearman p = 0.0456 had been upgraded into a headline where only the era-controlled partial correlation was licensed. All five became named defect classes.</p>
+      </section>
+      <section id="rec-r4">
+        <h4 style="font-family:var(--mono); font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:#7a5a10; margin:1.6rem 0 0.5rem;">Round 4 — Every Fix Reproduced; One New Overprecision Caught</h4>
+        <p class="small">All four discrepancies fixed — verifiably: the advisor re-ran the modules and reproduced every digit. The doctrine-dynamics module added (&ldquo;how a canon drifts while claiming immutability&rdquo;), and the audit caught one new defect of the panel&rsquo;s own making: a bootstrap CI of [1.0, 1.0] on the median slip velocity — a degenerate artifact of resampling dependent all-pairs ratios, the discrete median collapsing the interval to zero width. Mandatory surgery scheduled; goal v3 adopted: <em>the best-documented honest account of a modern channeled-prophecy corpus, every null at the same prominence as every hit, and the frozen 2027 rubric standing as a public, timestamped, blind-scored falsification pledge.</em></p>
+      </section>
+      <section id="rec-r5">
+        <h4 style="font-family:var(--mono); font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:#7a5a10; margin:1.6rem 0 0.5rem;">Round 5 — Surgery, Calibration, and the Certification Arc</h4>
+        <p class="small">Loop 1 applied the surgery (the [1.0, 1.0] CI removed, its corpse serialized in the JSON as <span style="font-family:var(--mono); font-size:0.85em;">removed_degenerate_ci</span>), re-ran everything clean at seed 42, and added the retroactive rubric calibration under the binding no-tuning clause. Loop 2, the final audit: <strong>NOT CERTIFIED</strong> — five blockers: B1, a provenance block in the doctrine module repeating the round-3 sin (one input listed that was never read, two read unlisted); B2, a &ldquo;248-term glossary&rdquo; that exists nowhere in the evidence layer (104 terms; 248 is the related-<em>edge</em> count); B3, P4 — a pre-registered null — invisible in the report; B4, a &ldquo;verbatim&rdquo; rubric quotation that was abridged; B5, a folio plate that inverted the Peres et al. 2012 finding and invented a control group. All five were one-line fixes; loop 3 re-verified each against the artifacts, not the changelog, cross-checking B5 against the primary source. <strong>CERTIFIED.</strong> No primary result changed under any fix; the Holm family stands at exactly four tests, P3 alone significant.</p>
+      </section>
+    </div>
+  </div>
+</section>
+
+<!-- torn transition II : ink over parchment -->
+<div class="torn" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+    <polygon fill="#191715" points="0,64 0,42 60,30 130,48 200,24 285,40 350,18 420,44 500,32 575,50 650,22 730,38 810,14 880,42 950,28 1030,48 1105,20 1180,40 1250,26 1330,46 1390,32 1440,40 1440,64"/>
+  </svg>
+</div>
+
+<!-- ================= PART I — THE CORPUS (ink) ================= -->
+<div class="section-ink" id="part-corpus">
+  <div class="triptych">
+    <aside class="outline" aria-label="Page outline">
+      <div class="outline-title">Outline · Folio X</div>
+      <details open>
+        <summary>Pt. I — The Corpus</summary>
+        <ul>
+          <li><a href="#corpus-table">What the index contains</a></li>
+          <li><a href="#corpus-caveat">The digest-bias caveat</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Pt. II — The Four Tests</summary>
+        <ul>
+          <li><a href="#p3">P3 · Demand sociology — CONFIRMED</a></li>
+          <li><a href="#p1">P1 · The hedging ratchet — null</a></li>
+          <li><a href="#p2">P2 · Window drift — null</a></li>
+          <li><a href="#p4">P4 · Disclosure trend — null</a></li>
+          <li><a href="#inst-holm">The Holm family</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Pt. III — The Ratchet Anatomy</summary>
+        <ul>
+          <li><a href="#slip-chain">The slip chain</a></li>
+          <li><a href="#inst-e7">Slip velocity, with its IQR</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Pt. IV — Doctrine Dynamics</summary>
+        <ul>
+          <li><a href="#doctrine">Liquid emphasis</a></li>
+          <li><a href="#contradictions">The flagged contradictions</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Pt. V–VI — The Watch &amp; the Blocked</summary>
+        <ul>
+          <li><a href="#rubric">The frozen 2027 rubric</a></li>
+          <li><a href="#calibration">Retroactive calibration</a></li>
+          <li><a href="#blocked">Stylometry, blocked</a></li>
+          <li><a href="#channeling-science">The channeling-science context</a></li>
+        </ul>
+      </details>
+      <div class="crossnav">
+        <a href="figures.html">I · Figures</a>
+        <a href="alchemy.html">II · The Alchemical Bench</a>
+        <a href="harmonics.html">III · The Harmonics Lab</a>
+        <a href="tesla_files.html">IV · The Tesla Files</a>
+        <a href="government.html">V · The Government Drawer</a>
+        <a href="experiments.html">VI · Atlas &amp; Experiments</a>
+        <a href="roundtable.html">VII · The Roundtable</a>
+        <a href="teleportation.html">VIII · The Correspondence Engine</a>
+        <a href="lab.html">IX · The Sound Laboratory</a>
+      </div>
+    </aside>
+
+    <main class="article">
+      <div class="part-header" id="part-corpus-head">
+        <span class="part-no">Part I</span>
+        <h2>The Corpus</h2>
+      </div>
+
+      <section id="corpus">
+        <p class="fade-in">The Bashar Index is not a transcript archive. It is an <strong>index, measurement, and critical-apparatus layer</strong> over the public Bashar corpus — with careful legal hygiene: no transcripts hosted, quotes capped at 30 words, diagrams redrawn, disclaimers everywhere. The panel worked over its machine-readable layer, and only that layer. A short history orients the numbers: Anka began channeling in 1983 after a guided-meditation class, following two close-range UFO sightings in the 1970s; through the 1990s the movement was a seminar-and-cassette operation; the 2016 documentary <em>First Contact</em> and the migration to YouTube transformed it into a streaming catalog — and it is this streaming era, 2016 to mid-2026, that the digest layer captures.</p>
+
+        <div class="table-wrap" id="corpus-table">
+          <table class="gold">
+            <thead>
+              <tr><th>Layer</th><th>Contents</th><th>What it can and cannot support</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="rownum">1</td><td><strong>Session catalogue</strong> — 684 sessions/events, 1984–2027</td><td>644 live sessions, 14 conference, 10 other, 7 workshop, 5 retreat, 4 online; sources archive.org (393) and tv.bashar.org (274); 6 entries are future events. <strong>Title/date metadata only — no content</strong>: era-level content claims before 2024 rest on the thin, fan-summarized teachings file, not on primary text.</td></tr>
+              <tr><td class="rownum">2</td><td><strong>Digest layer</strong> — 75 video digests</td><td>Structured per-video summaries with topic shares, key terms, and extracted predictions: 27 full sessions, 21 interviews with Anka, 12 official highlight clips, 15 clips — ≈ <strong>1.19 M words</strong> analyzed (<span style="font-family:var(--mono); font-size:0.85em;">approx_words_analyzed: 1186510</span>). The layer every primary test runs on.</td></tr>
+              <tr><td class="rownum">3</td><td><strong>Audience questions</strong> — 949 Q&amp;As in 20 topic tags</td><td>Available only as aggregate counts plus 99 sampled examples; per-question tags are not stored, so P3/P4 are digest-level claims about estimated share vectors — disclosed as a data deviation, worked around, never hidden.</td></tr>
+              <tr><td class="rownum">4</td><td><strong>Glossary</strong> — 104 terms, 248 related-term edges</td><td>The doctrine&rsquo;s controlled vocabulary. (The round-5 blocker B2 lives here: an early draft said &ldquo;248-term glossary&rdquo; — 248 is the related-<em>edge</em> count. The corrected sentence is this one.) The full concept graph: 126 nodes, 635 edges.</td></tr>
+              <tr><td class="rownum">5</td><td><strong>Prediction ledger</strong> — 164 dated claims</td><td>Built from the digests&rsquo; <span style="font-family:var(--mono); font-size:0.85em;">predictions_and_dates</span> fields: each row carries its stated deadline or window, a conditionality score against the frozen 50-phrase escape-hatch lexicon, and a date-reliability flag. <strong>38 rows</strong> come from videos whose year survives only in the upload title — kept, flagged, excluded from every time series.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure class="plate">
+          <img src="assets/plate_digest_pipeline.png" alt="Engraved encyclopedia-style plate of the analysis pipeline: a wall of framed video screens feeding a hopper, a stamping press converting each frame into a uniform punched card, a conveyor passing under three inspection gantries marked with a scale, a calendar gear, and an astrolabe, and the cards bound into an archive volume behind a final turnstile gate" loading="lazy">
+          <figcaption><span class="plate-no">Plate XXXVII — The Pipeline, as One Plate.</span><span class="plate-desc">Public videos become digests, digests become ledgers and share-vectors, and a single enforcement gate — the multiple-comparison enforcer — decides what may call itself a finding. Overlay counts, verbatim from the JSONs: 75 digests → 164 ledger rows · 949 questions · 20 tags; P1–P4 Holm family (α = 0.05), everything else EXPLORATORY; results/*.json + figures F1–F8, seed 42. digest_level: content | grade: Frontier.</span></figcaption>
+        </figure>
+      </section>
+
+      <section id="corpus-caveat">
+        <h3>The digest-bias caveat, stated before any finding</h3>
+        <p>The digests are <strong>pipeline-generated summaries, not transcripts</strong>. Every primary number on this page is therefore a digest-level statement about estimated share vectors and extracted prediction fields — grade Frontier, never transcript-level. Two properties nonetheless make the corpus worth studying. It is <em>modern</em>: most reliable-date material is 2016–2026, dense with a specific, repeated, datable prophecy. And it is <em>self-documenting</em>: the doctrine explicitly teaches that predictions are readings of current energy — the escape hatch is part of the doctrine, so its usage can be counted in the doctrine&rsquo;s own ledger. What the digest layer cannot see at all — transcription error, vocal register, authorship — is exactly what Part VI marks as blocked rather than papered over.</p>
+      </section>
+    </main>
+
+    <aside class="margin-col">
+      <div class="margin-note">
+        <span class="mn-label">Why measure a corpus at all</span>
+        A prophecy that never states a date can never fail. This one states dates — which makes it, uniquely in its genre, an instrument-readable object. The panel&rsquo;s contribution is not to judge the room but to instrument it.
+      </div>
+      <div class="margin-note">
+        <span class="mn-label">The honesty rule, inherited</span>
+        Same law as Folio IX: no hand-transcribed numbers. Every numeral on this page quotes a committed result JSON or a cited panel document; verdict strings are machine-emitted; nulls are displayed beside the one confirmation.
+      </div>
+      <div class="margin-note">
+        <span class="mn-label">Numbering</span>
+        Plates continue the archive&rsquo;s sequence: I–XVI in Folios I–VIII, the decipherments XVII–XXVI, the laboratory setups XXVII–XXXI, and this folio&rsquo;s six plates XXXII–XXXVII. The hero render is unnumbered.
+      </div>
+      <div class="margin-thumb">
+        <img src="assets/fig_f1_gantt.png" alt="Sliding-window gantt of stated contact windows" loading="lazy">
+        <span class="cap">F1 · Every stated window vs the moving &ldquo;now&rdquo;</span>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- torn transition III : parchment over ink -->
+<div class="torn" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+    <polygon fill="#F4ECD8" points="0,64 0,26 55,40 120,20 190,46 260,28 335,44 405,16 480,38 555,24 630,48 705,30 780,18 855,42 930,26 1005,44 1080,34 1155,50 1230,24 1300,40 1370,22 1440,34 1440,64"/>
+  </svg>
+</div>
+
+<!-- ================= PART II — THE FOUR TESTS (light) ================= -->
+<div class="section-light" id="part-tests">
+  <div class="triptych">
+    <aside class="outline" aria-label="Tests outline">
+      <div class="outline-title">The Pre-Registered Family</div>
+      <details open>
+        <summary>P1–P4, Holm α = 0.05</summary>
+        <ul>
+          <li><a href="#p3">P3 · Demand sociology</a></li>
+          <li><a href="#p1">P1 · Conditionality ratchet</a></li>
+          <li><a href="#p2">P2 · Window drift</a></li>
+          <li><a href="#p4">P4 · Disclosure trend</a></li>
+          <li><a href="#inst-holm">The family verdict</a></li>
+        </ul>
+      </details>
+    </aside>
+
+    <main class="article">
+      <div class="part-header" id="part-tests-head">
+        <span class="part-no">Part II</span>
+        <h2>The Four Pre-Registered Tests</h2>
+      </div>
+      <p>Exactly four primary tests, frozen before scoring and Holm-corrected as a family at &alpha; = 0.05. One confirmed; three nulls. The nulls hang at the same size, in the same daylight, as the confirmation — a pre-registered null is a result, not an omission (the round-5 audit enforced this on the panel&rsquo;s own report; this page is built to that standard). Instrument panels quote the committed JSONs verbatim.</p>
+
+      <!-- ===== P3 ===== -->
+      <div class="lab-card fade-in" id="p3">
+        <div class="lab-head">
+          <span class="lab-id">P3</span>
+          <h3>The Demand Sociology — Packaging Predicts Content</h3>
+          <span class="lab-badges"><span class="badge established">Confirmed — Holm family</span> <span class="badge frontier">Grade: Frontier</span> <span class="badge cost">75 videos · 20 tags × 4 formats</span></span>
+        </div>
+        <span class="lab-convince">The family&rsquo;s one confirmed test — about packaging, not prophecy</span>
+        <p>Do the formats in which the material is sold — free interviews, short clips, official highlight reels, paid full-length sessions — deliver systematically different content? Yes. The &chi;&sup2; test of topic-share &times; content-type over the 75 videos gives Cramér&rsquo;s <strong>V = 0.212</strong>, clearing the pre-registered V &gt; 0.2 threshold narrowly — the bias-corrected estimate, 0.206, sits below the bar — while the cluster-bootstrap 95% CI <strong>[0.211, 0.300]</strong> clears it entirely, and a within-year permutation test (p = 10<sup>-4</sup>) is robust to the pseudo-replication that makes the asymptotic p-value (&asymp;10<sup>-175</sup>) meaningless as count inference. The direction is the content: free <strong>interviews (+6.9)</strong> and <strong>clips/excerpts (+3.1)</strong> over-deliver disclosure content relative to the corpus average; <strong>official highlight clips (&minus;3.0)</strong> and <strong>paid full sessions (&minus;6.4)</strong> under-deliver it, skewing to relationships, health, abundance, and life guidance. The front door sells contact; the back room sells life advice. Disclosure as marketing surface, personal guidance as product — the movement&rsquo;s economic engine, measurable from public data alone.</p>
+        <details class="prereg">
+          <summary>Preregistration — design &amp; deviations</summary>
+          <dl>
+            <dt>Hypothesis</dt><dd>H4 segmentation: topic shares differ by packaging format — confirmed only if p &lt; 0.05 AND V &gt; 0.2 (design threshold, frozen round 2).</dd>
+            <dt>Endpoint + threshold</dt><dd>&chi;&sup2; on the 20-tag × 4-type table of summed per-video topic-share points; Cramér&rsquo;s V against 0.2; cluster-bootstrap CI over videos; within-year-strata permutation as the pseudo-replication-robust p.</dd>
+            <dt>Null</dt><dd>No segmentation: packaging carries the same topical mix.</dd>
+            <dt>Data deviation (disclosed)</dt><dd>Per-question tags keyed to video are not stored in the repo; P3 runs on per-video 20-tag share vectors. All cells are pipeline-estimated share points, not raw question counts — hence the headline asymptotic p is decorative and caged.</dd>
+            <dt>Cross-check</dt><dd>E5 (EXPLORATORY): the 99 sampled questions, Monte-Carlo permutation p = 0.031, V = 0.558 [0.555, 0.772] — direction confirmed at question level within the two sampled formats; the confirmed claim remains digest-level.</dd>
+            <dt class="kill-line">Kill</dt><dd>V below threshold or CI covering it → segmentation claim does not ship. (Not triggered.)</dd>
+          </dl>
+        </details>
+        <figure class="plate">
+          <img src="assets/fig_f4_demand_mosaic.png" alt="Heatmap of tag-by-content-type standardized Pearson residuals across the 20 topic tags and 4 packaging formats, amber for over-represented and copper for under-represented" loading="lazy">
+          <figcaption><span class="plate-no">F4 · The Heatmap.</span><span class="plate-desc">Tag × content-type standardized Pearson residuals. The disclosure row reads: full sessions &minus;6.4, interviews +6.9, clips +3.1, official highlights &minus;3.0. (The round-3 sentence claiming highlights skew to disclosure contradicted this figure and was retracted — the skew is carried by interviews and clips.) digest_level: content | grade: Frontier | P3 (primary).</span></figcaption>
+        </figure>
+        <div class="instrument" id="inst-p3">
+          <div class="inst-head"><span class="inst-sim">demand</span> · P3 · commit cff3988 · seed 42 · 10,000 resamples</div>
+          <span class="readout"><span class="ac-id">χ² test of independence, 20-tag × 4-type table</span> — observed <span class="num">chi2=1012.009015333832, dof=57, n_percentage_points=7505</span>, target <span class="target">p &lt; 0.05 AND V &gt; 0.2</span><span class="verdict-tag">PASS</span></span>
+          <span class="readout"><span class="ac-id">Cramér&rsquo;s V vs pre-registered threshold 0.2</span> — observed <span class="num">V=0.21200993605007945; bias_corrected_v=0.2059931898671588</span>, target <span class="target">V &gt; 0.2 (cleared narrowly; bias-corrected estimate below the bar)</span><span class="verdict-tag">PASS</span></span>
+          <span class="readout"><span class="ac-id">Cluster-bootstrap 95% CI over videos</span> — observed <span class="num">[0.21070200784255194, 0.3002126087826097]</span>, target <span class="target">clears the 0.2 threshold entirely</span><span class="verdict-tag">PASS</span></span>
+          <span class="readout"><span class="ac-id">Within-year-strata permutation (reliable-year videos, n=40)</span> — observed <span class="num">chi2=572.1, permutation p=0.0001, asymptotic p=4.042e-86, V=0.218</span>, target <span class="target">robust to row-independence problem</span><span class="verdict-tag">PASS</span></span>
+          <span class="readout"><span class="ac-id">Headline asymptotic p</span> — observed <span class="num">7.496757064537865e-175</span>, target <span class="target">DECORATIVE as count inference — massive pseudo-replication; never quoted without this caveat (advisor ruling §3)</span><span class="verdict-tag info">CAGED</span></span>
+          <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;The operative evidence is: V=0.212 clears the pre-registered 0.2 threshold narrowly (bias-corrected 0.206 does not), the cluster bootstrap CI clears it entirely, and the within-year-strata permutation p=0.0001 is robust to the row-independence problem. P3 confirms digest-level topical segmentation by packaging format, NOT question-level demand.&rdquo;</div>
+          <div class="seed-foot">seed 42 · source: analysis/results/demand_results.json · grade: Frontier · digest_level: content</div>
+        </div>
+        <div class="kill-strip"><span class="kill-label">Adjudication note — always visible</span>The confirmed claim is digest-level segmentation by packaging format. The 99-question cross-check (E5) is EXPLORATORY and inherits its own pseudo-replication caveat; the 10<sup>-175</sup> asymptotic figure is retained only as a decorative artifact and is never quoted without its caveat.</div>
+        <div class="link-rail"><a href="#inst-p3">instrument →</a><a href="#inst-holm">family verdict →</a><a href="#docs">evidence layer →</a></div>
+      </div>
+
+      <!-- ===== P1 ===== -->
+      <div class="lab-card fade-in" id="p1">
+        <div class="lab-head">
+          <span class="lab-id">P1</span>
+          <h3>The Conditionality Ratchet — Rejected</h3>
+          <span class="lab-badges"><span class="badge speculative">Pre-registered null</span> <span class="badge frontier">Grade: Frontier</span> <span class="badge cost">n = 88 claims</span></span>
+        </div>
+        <span class="lab-convince">The ratchet as a hedging mechanism — the signature is not there</span>
+        <p>The pre-registered ratchet hypothesis held that as a stated deadline approaches, claims about it become <em>more</em> conditional — hedging as an approach-avoidance mechanism, quantified by a conditionality index C (lexicon hits per token) against &Delta;, the time remaining to the deadline. The one-sided Jonckheere&ndash;Terpstra permutation test across ordinal &Delta; bins rejects it: <strong>p = 0.948</strong>, Somers&rsquo; D = <strong>&minus;0.309</strong> — conditionality is flat-to-<em>falling</em> near resolution, the direction the pre-registration assigned to <em>un</em>hedged forecasting. Two companion statistics are kept distinct (the round-3 conflation was corrected in the audit): the uncontrolled Spearman &rho; = &minus;0.214 (EXPLORATORY p = 0.046) does not control for era; the era-controlled partial &rho; = &minus;0.203 has a bootstrap CI [&minus;0.386, &minus;0.005] that grazes zero (naive asymptotic p &asymp; 0.059, reported, never upgraded). The negative trend is weak, era-fragile, and carried by a three-claim bin. A rejected H1 is a null for the ratchet hypothesis — it is <strong>not</strong> a discovered virtue, and no sentence of the form &ldquo;the corpus hedges honestly&rdquo; is licensed anywhere in the panel&rsquo;s output.</p>
+        <details class="prereg">
+          <summary>Preregistration — design &amp; the stated-n rule</summary>
+          <dl>
+            <dt>Hypothesis</dt><dd>Conditionality C rises monotonically as &Delta; shrinks (the ratchet-as-hedging signature).</dd>
+            <dt>Endpoint + threshold</dt><dd>One-sided Jonckheere&ndash;Terpstra across ordinal &Delta; bins on per-claim c_i; permutation p, 10,000 resamples, seed 42.</dd>
+            <dt>Null</dt><dd>Flat or falling conditionality near resolution — the shape the pre-registration assigned to honest forecasting. Observed: exactly that shape, which is a null for H1, not a confirmation of honesty.</dd>
+            <dt>Stated n</dt><dd>88 reliably dated claims with parseable deadlines. Per-bin: &gt;10y n=11 (pooled C 0.0070); 5&ndash;10y n=3 (C 0.0811 — the bin that carries the trend); 1&ndash;5y n=30 (C 0.0343); &lt;1y n=25 (C 0.0068); post-deadline n=19 (C 0.0145). Where n &lt; 10: directional + CI only.</dd>
+            <dt>Era control</dt><dd>E1 (within-era JT) is vacuous — every reliable-date claim is already post-2015; the operative era control is E3, the partial Spearman controlling date_made.</dd>
+            <dt class="kill-line">Kill</dt><dd>A rejected H1 ends the question. Mining P1 further was explicitly abandoned in round 4: the ratchet question is answered; continuing would be necromancy.</dd>
+          </dl>
+        </details>
+        <figure class="plate">
+          <img src="assets/fig_f2_conditionality.png" alt="Conditionality index C versus time-to-deadline bins, with pooled C per bin and bootstrap confidence intervals; the 5-to-10-year bin is elevated on n of 3" loading="lazy">
+          <figcaption><span class="plate-no">F2 · Conditionality vs. Time-to-Deadline.</span><span class="plate-desc">P1 JT (per-claim c_i, n=88): permutation p=0.9483 — ratchet signature rejected. E2 uncontrolled &rho;=&minus;0.214, p=0.0456 | E3 era-controlled partial &rho;=&minus;0.203, CI [&minus;0.386, &minus;0.0046], naive p=0.059. The elevated 5&ndash;10y bin is n=3; pooled C per bin is descriptive only. digest_level: content | grade: Frontier | P1 (primary).</span></figcaption>
+        </figure>
+        <div class="instrument" id="inst-p1">
+          <div class="inst-head"><span class="inst-sim">predictions</span> · P1 · commit cff3988 · seed 42 · permutation, 10k</div>
+          <span class="readout"><span class="ac-id">P1 one-sided Jonckheere–Terpstra permutation p</span> — observed <span class="num">0.9483051694830517 (J=1285.0)</span>, target <span class="target">ratchet signature: rising C near deadline</span><span class="verdict-tag fail">NULL — H1 REJECTED</span></span>
+          <span class="readout"><span class="ac-id">P1 effect size — Somers&rsquo; D</span> — observed <span class="num">-0.3094736842105263</span>, CI95 <span class="target">[-0.6345094456701599, 0.053471835565435055]</span><span class="verdict-tag fail">NULL</span></span>
+          <span class="readout"><span class="ac-id">P1 n, stated before interpretation</span> — observed <span class="num">88 reliably dated claims with parseable deadlines</span>, target <span class="target">stated-n rule (advisor ruling b)</span><span class="verdict-tag">PASS</span></span>
+          <span class="readout"><span class="ac-id">E2 uncontrolled Spearman (EXPLORATORY)</span> — observed <span class="num">rho=-0.21367676431185825, p=0.0456131236415718, n=88</span>, target <span class="target">does NOT control era — never the headline (r3 audit)</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">E3 era-controlled partial Spearman (EXPLORATORY)</span> — observed <span class="num">partial rho=-0.20308494058626841, bootstrap CI95 [-0.38583704164110927, -0.0045597707100553065], naive p=0.0592</span>, target <span class="target">upper bound grazes zero; naive asymptotic p reported, never upgraded</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;Ratchet signature REJECTED (p=0.9483, Somers D=-0.309); the observed direction is flat-to-falling, consistent with the pre-registered null shape. The negative trend is weak, era-fragile, and carried by the 5-10y bin (n=3). A rejected H1 is a null result for the ratchet hypothesis, NOT a confirmed alternative (advisor ruling §2).&rdquo;</div>
+          <div class="seed-foot">seed 42 · source: analysis/results/predictions_results.json · grade: Frontier · digest_level: content</div>
+        </div>
+        <div class="kill-strip"><span class="kill-label">Null — displayed, not buried</span>P1 is a clean pre-registered rejection. No &ldquo;honest forecasting&rdquo; sentence is licensed; the uncontrolled p = 0.0456 may not be quoted as the headline. (Both rules were enforced on the panel&rsquo;s own drafts.)</div>
+        <div class="link-rail"><a href="#inst-p1">instrument →</a><a href="#inst-holm">family verdict →</a><a href="#slip-chain">the ledger →</a></div>
+      </div>
+
+      <!-- ===== P2 ===== -->
+      <div class="lab-card fade-in" id="p2">
+        <div class="lab-head">
+          <span class="lab-id">P2</span>
+          <h3>The Window-Drift Test — Not Certified</h3>
+          <span class="lab-badges"><span class="badge speculative">Pre-registered null</span> <span class="badge frontier">Grade: Frontier</span> <span class="badge cost">n = 25 restatements</span></span>
+        </div>
+        <span class="lab-convince">The ratchet as a calendar mechanism — the CI does not certify it either</span>
+        <p>P2 asked the drift question directly: does the contact window&rsquo;s stated bound recede at least as fast as time passes? The Theil&ndash;Sen slope of the window&rsquo;s lower bound over restatements (n = 25) is 0.0 with a 95% CI of <strong>[&minus;1.2, 1.0]</strong> — which does <strong>not</strong> certify recession at &ge; 1 year per year. By design (round 2) P2 is CI-based and enters the Holm family with its CI verdict rather than a p-value. The drift the ledger plainly documents — Part III — is real as a sequence of events; what the inferential machinery refuses to certify is a clean per-year rate over deduplicated restatements. Both facts ship. The ledger is the finding; the statistic is the annotation.</p>
+        <details class="prereg">
+          <summary>Preregistration — design &amp; thresholds</summary>
+          <dl>
+            <dt>Hypothesis</dt><dd>The contact window&rsquo;s lower bound drifts at &ge; 1.0 year per year — the deadline recedes at least as fast as time passes (ratchet signature).</dd>
+            <dt>Endpoint + threshold</dt><dd>Theil&ndash;Sen slope over restated contact-window bounds, deduplicated per video/bounds; CI-based per design §2 — no p-value by construction.</dd>
+            <dt>Null</dt><dd>CI does not certify drift &ge; 1.0. Observed: exactly that.</dd>
+            <dt>Stated n</dt><dd>n = 25 restated contact-window bounds; each point a restatement in a reliable-date video.</dd>
+            <dt class="kill-line">Kill</dt><dd>CI verdict is final for the inferential claim; the documented slip chain itself is reported as ledger fact in Part III with its non-independence disclosed.</dd>
+          </dl>
+        </details>
+        <figure class="plate">
+          <img src="assets/fig_f1_gantt.png" alt="Sliding-window gantt: every stated contact window as a horizontal bar against the moving present, n = 25 distinct stated windows" loading="lazy">
+          <figcaption><span class="plate-no">F1 · The Sliding-Window Gantt.</span><span class="plate-desc">Every stated contact window vs. the moving &ldquo;now&rdquo; — n = 25 distinct stated windows, deduplicated per video. The bars migrate rightward as the calendar catches them; the dashed line is the present. digest_level: content | grade: Frontier.</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <img src="assets/fig_f3_drift.png" alt="Contact-window bound drift: stated upper and lower bounds by date made, with Theil-Sen reference lines and the drift-equals-one reference" loading="lazy">
+          <figcaption><span class="plate-no">F3 · The Drift That Is Not Certified.</span><span class="plate-desc">Theil&ndash;Sen drift of stated bounds over restatements: L(t) = 0.00 yr/yr [95% CI &minus;1.20, 1.00]; U(t) = 0.00 [&minus;1.50, 3.00]; n = 25. The dashed reference is drift = 1 — the line the data never certify. digest_level: content | grade: Frontier | P2 (primary).</span></figcaption>
+        </figure>
+        <div class="instrument" id="inst-p2">
+          <div class="inst-head"><span class="inst-sim">predictions</span> · P2 · commit cff3988 · seed 42 · CI-based, no p by design</div>
+          <span class="readout"><span class="ac-id">P2 Theil–Sen drift slopes (lower / upper bound)</span> — observed <span class="num">L=0.0, U=0.0</span>, target <span class="target">drift &gt;= 1.0 yr/yr certifies the ratchet</span><span class="verdict-tag fail">NULL — NOT CERTIFIED</span></span>
+          <span class="readout"><span class="ac-id">P2 confidence intervals</span> — observed <span class="num">ci95=[-1.2, 1.0]; slope_U 95% CI [-1.50, 3.00]</span>, target <span class="target">CI verdict, per design §2</span><span class="verdict-tag fail">NULL</span></span>
+          <span class="readout"><span class="ac-id">P2 n, stated before interpretation</span> — observed <span class="num">25 restated contact-window bounds</span>, target <span class="target">deduplicated per video/bounds; reliable-date videos only</span><span class="verdict-tag">PASS</span></span>
+          <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;CI does not certify drift &gt;= 1.0. Each point is a restatement of a contact window in a reliable-date video (deduplicated per video/bounds).&rdquo;</div>
+          <div class="seed-foot">seed 42 · source: analysis/results/predictions_results.json · grade: Frontier · digest_level: content</div>
+        </div>
+        <div class="kill-strip"><span class="kill-label">Null — displayed, not buried</span>The inferential rate is not certified; the documented slip chain is nonetheless a ledger fact — see Part III, where the velocity ships with its IQR and its non-independence disclosed.</div>
+        <div class="link-rail"><a href="#inst-p2">instrument →</a><a href="#inst-holm">family verdict →</a><a href="#slip-chain">the slip chain →</a></div>
+      </div>
+
+      <!-- ===== P4 ===== -->
+      <div class="lab-card fade-in" id="p4">
+        <div class="lab-head">
+          <span class="lab-id">P4</span>
+          <h3>The Disclosure-Share Trend — Flat</h3>
+          <span class="lab-badges"><span class="badge speculative">Pre-registered null</span> <span class="badge frontier">Grade: Frontier</span> <span class="badge cost">34 videos · 556 questions</span></span>
+        </div>
+        <span class="lab-convince">The audience&rsquo;s disclosure appetite is flat while the windows slide</span>
+        <p>The family&rsquo;s fourth primary asked whether disclosure content is <em>escalating</em>: does the disclosure-topic share of audience questions rise over the late streaming era, against the frozen 16.8% base rate? No. The binomial GLM of disclosure-question share on year over the reliable-year videos of 2024&ndash;2026 (n = 34 videos, 556 questions) gives a log-odds slope of <strong>&minus;0.149 per year</strong> (95% CI <strong>[&minus;0.60, +0.30]</strong>, one-sided p = 0.741 for a rising slope), and the fitted shares are non-monotone: the disclosure share is <strong>flat-to-declining</strong> against its frozen base rate. A clean pre-registered null — the corpus does not escalate its disclosure content in the era closest to the deadline — reported here with the same prominence as the family&rsquo;s one confirmed test. (Equal prominence for this null was round-5 blocker B3: the panel&rsquo;s own first draft had omitted it.)</p>
+        <details class="prereg">
+          <summary>Preregistration — design &amp; thresholds</summary>
+          <dl>
+            <dt>Hypothesis</dt><dd>Disclosure-topic share rises as the deadline approaches.</dd>
+            <dt>Endpoint + threshold</dt><dd>Binomial GLM of share on year; confirmation requires one-sided slope &gt; 0 AND monotone fitted shares. Frozen base rate 16.8%.</dd>
+            <dt>Null</dt><dd>Flat-to-declining share. Observed: slope &minus;0.149, monotone=False — confirmed=False.</dd>
+            <dt>Stated n</dt><dd>34 reliable-year videos (2024&ndash;2026), 556 questions, per-video question counts as GLM weights.</dd>
+            <dt class="kill-line">Kill</dt><dd>Null → the escalation narrative is discarded for the late streaming era; reported at equal prominence with P3.</dd>
+          </dl>
+        </details>
+        <figure class="plate">
+          <img src="assets/fig_f5_disclosure_trend.png" alt="Disclosure-topic share of audience questions over 2024-2026 with fitted logistic trend, confidence band, and the frozen 16.8 percent base rate line" loading="lazy">
+          <figcaption><span class="plate-no">F5 · The Trend That Isn&rsquo;t.</span><span class="plate-desc">Disclosure-topic share over time: P4 slope = &minus;0.15 log-odds/yr [&minus;0.60, +0.30], one-sided p = 0.741, monotone=False; n = 34 videos / 556 questions, reliable years 2024&ndash;2026; the dotted line is the frozen 16.8% base rate. digest_level: content | grade: Frontier | P4 (primary).</span></figcaption>
+        </figure>
+        <div class="instrument" id="inst-p4">
+          <div class="inst-head"><span class="inst-sim">demand</span> · P4 · commit cff3988 · seed 42</div>
+          <span class="readout"><span class="ac-id">P4 binomial GLM slope (log-odds per year)</span> — observed <span class="num">-0.14923458876642834 (se 0.23082827873133024, z=-0.6465177905698812)</span>, target <span class="target">one-sided slope &gt; 0 AND monotone fitted shares</span><span class="verdict-tag fail">NULL — NO ESCALATION</span></span>
+          <span class="readout"><span class="ac-id">P4 one-sided p / CI95</span> — observed <span class="num">p=0.7410279603184489; ci95=[-0.6016580150798356, 0.3031888375469789]</span>, target <span class="target">rising-slope test</span><span class="verdict-tag fail">NULL</span></span>
+          <span class="readout"><span class="ac-id">P4 n, stated before interpretation</span> — observed <span class="num">34 videos / 556 questions, reliable years 2024-2026; monotone_fitted_shares=false; base_rate_frozen=16.8</span>, target <span class="target">stated-n rule</span><span class="verdict-tag">PASS</span></span>
+          <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;Binomial GLM of disclosure-topic share on year, reliable-year videos 2024-2026 (n=34 videos, 556 questions). One-sided slope&gt;0 plus monotone fitted shares: monotone=False; confirmed=False. Frozen base rate: 16.8%.&rdquo;</div>
+          <div class="seed-foot">seed 42 · source: analysis/results/demand_results.json · grade: Frontier · digest_level: content</div>
+        </div>
+        <div class="kill-strip"><span class="kill-label">Null — displayed, not buried</span>With P1, P2, and P4 all null, the Holm family stands at exactly one significant test in four. The audience is not being escalation-fed; the windows slide anyway.</div>
+        <div class="link-rail"><a href="#inst-p4">instrument →</a><a href="#inst-holm">family verdict →</a><a href="#docs">evidence layer →</a></div>
+      </div>
+
+      <h4>The family verdict</h4>
+      <div class="instrument" id="inst-holm">
+        <div class="inst-head"><span class="inst-sim">family_holm</span> · P1–P4 · commit cff3988 · generated 2026-09-23</div>
+        <span class="readout"><span class="ac-id">P3 demand segmentation</span> — observed <span class="num">p_holm_global=2.2490271193613594e-174</span>, target <span class="target">Holm step-down, family α=0.05</span><span class="verdict-tag">SIGNIFICANT</span></span>
+        <span class="readout"><span class="ac-id">P1 conditionality ratchet</span> — observed <span class="num">p_holm_global=1.0</span>, target <span class="target">—</span><span class="verdict-tag fail">NOT SIGNIFICANT</span></span>
+        <span class="readout"><span class="ac-id">P4 disclosure trend</span> — observed <span class="num">p_holm_global=1.0</span>, target <span class="target">—</span><span class="verdict-tag fail">NOT SIGNIFICANT</span></span>
+        <span class="readout"><span class="ac-id">P2 window drift</span> — observed <span class="num">CI verdict: does not certify drift &gt;= 1.0</span>, target <span class="target">enters CI-based, per design §2</span><span class="verdict-tag fail">NOT CERTIFIED</span></span>
+        <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;Holm step-down across the 4 primary tests; P2 is CI-based and enters with its CI verdict (design §2).&rdquo; Exactly one significant test in four: P3. (The global multiplier of 3 on P3&rsquo;s p reflects three p-values plus P2&rsquo;s CI verdict — internally consistent and disclosed in the policy line.)</div>
+        <div class="seed-foot">seed 42 · source: analysis/results/family_holm.json · policy: Holm step-down across the 4 primary tests at α=0.05</div>
+      </div>
+    </main>
+
+    <aside class="margin-col">
+      <div class="margin-note">
+        <span class="mn-label">Why parchment</span>
+        The family of primaries is where claims meet daylight. The one confirmation and the three nulls are typeset at the same size, in the same band — equal prominence is the round-5 standard, enforced on the panel itself.
+      </div>
+      <div class="margin-note">
+        <span class="mn-label">The decorative p-value</span>
+        p &asymp; 10<sup>-175</sup> is meaningless as count inference — the cells are pipeline-estimated share points with massive pseudo-replication. It is retained, caged, and never quoted without the caveat. The operative evidence is the CI and the permutation test.
+      </div>
+      <div class="margin-note">
+        <span class="mn-label">A rejected H1 is not a virtue</span>
+        P1&rsquo;s null means the ratchet-as-hedging hypothesis failed. It does not mean the corpus hedges honestly — that sentence is barred by advisor ruling and by the panel&rsquo;s own pre-registration.
+      </div>
+      <div class="margin-thumb">
+        <img src="assets/fig_f4_demand_mosaic.png" alt="Demand heatmap thumbnail" loading="lazy">
+        <span class="cap">F4 · Front door vs back room</span>
+      </div>
+      <div class="margin-thumb">
+        <img src="assets/fig_f5_disclosure_trend.png" alt="Disclosure trend thumbnail" loading="lazy">
+        <span class="cap">F5 · Flat against the frozen base rate</span>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- torn transition IV : deep olive over parchment -->
+<div class="torn" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+    <polygon fill="#2F3D29" points="0,64 0,32 66,18 140,42 214,26 288,48 362,20 436,38 510,24 584,46 658,22 732,40 806,18 880,44 954,28 1028,46 1102,20 1176,42 1250,26 1324,44 1398,30 1440,38 1440,64"/>
+  </svg>
+</div>
+
+<!-- ================= PART III — THE RATCHET ANATOMY (olive) ================= -->
+<div class="section-olive" id="part-ratchet">
+  <div class="triptych">
+    <aside class="outline" aria-label="Ratchet outline">
+      <div class="outline-title">The Ratchet Anatomy</div>
+      <details open>
+        <summary>The failed ratchet</summary>
+        <ul>
+          <li><a href="#slip-chain">The slip chain</a></li>
+          <li><a href="#inst-e7">E7 · Slip velocity (EXPLORATORY)</a></li>
+          <li><a href="#plate33">Plate XXXIII</a></li>
+        </ul>
+      </details>
+    </aside>
+
+    <main class="article">
+      <div class="part-header" id="part-ratchet-head">
+        <span class="part-no">Part III</span>
+        <h2>The Ratchet Anatomy</h2>
+      </div>
+      <p>P1 and P2 rejected the ratchet as an inferential mechanism — no rising hedges, no certified drift rate. But the ledger itself — <strong>the finding, with the statistics as annotation</strong> — tells the cleaner story.</p>
+
+      <section id="slip-chain">
+        <h3>The documented slip chain</h3>
+        <p>The contact window&rsquo;s documented slip chain runs <strong>2020 → 2023&ndash;33 → 2025&ndash;33 → 2026/27 → 2028&ndash;29</strong>, each re-issue logged as a ratchet event — never edited, only appended. Across the corpus there are <strong>73 window-polarity flips</strong> — a later-stated window lying entirely beyond an earlier-stated one — computed as all-pairs ratios from 35 window rows and therefore <strong>non-independent</strong> (each row enters ~4 pairs; this structure is disclosed wherever n = 73 appears). The median flip overshoots the violated bound by 2 years (95% CI [1.0, 2.0]; max overshoot 25 years). By era pair: 37 flips run early&rarr;late, 33 late&rarr;late, 3 early&rarr;early.</p>
+        <p>The ratchet fails as a <em>hedging</em> mechanism and succeeds as a <em>calendar</em> mechanism: deadlines do not become more conditional as they approach — they are simply replaced, annually, on schedule. The failure mode is institutionalized, not improvised.</p>
+
+        <figure class="plate" id="plate33">
+          <img src="assets/plate_prediction_ledger.png" alt="Engraved plate: a wall calendar whose pages hang from a brass ratchet-and-pawl gear mechanism, each page a blank window frame with a string running to a small weight hanging progressively further right on each successive page, and below it an open ruled ledger book with many rows of tick marks, a few rows crossed out and rewritten one line lower" loading="lazy">
+          <figcaption><span class="plate-no">Plate XXXIII — The Receding-Deadline Ratchet.</span><span class="plate-desc">Each promised window is replaced, on schedule, by a later one. Overlay, verbatim from the JSONs: slip chain 2020 → 2023–33 → 2025–33 → 2026/27 → 2028–29; 73 window-polarity flips (all-pairs ratios from 35 window rows, non-independent); consecutive restatements recede at median 1.0 yr/yr (IQR [0.5, 4.25] on the all-pairs distribution). The ledger — 164 dated claims — is the finding; the statistics are annotation. digest_level: content | grade: Frontier; the E7 statistics carry the EXPLORATORY banner, mirroring figure twin F7a.</span></figcaption>
+        </figure>
+
+        <figure class="plate">
+          <img src="assets/fig_f7_dynamics.png" alt="Two-panel figure: left, flip timeline of 73 pairwise flips from 35 window rows; right, liquid emphasis — salience rank volatility of consecutive digests" loading="lazy">
+          <figcaption><span class="plate-no">F7 · Doctrine Dynamics — Flip Timeline and Liquid Emphasis.</span><span class="plate-desc">F7a: the 73 pairwise flips (all pairs, non-independent); consecutive restatements (elapsed = 1 y, n = 38) recede at median 1.0 yr/yr; all-pairs median 1.0 yr/yr, IQR [0.50, 4.25]. F7b: consecutive-digest salience Spearman, mean +0.16 — the emphasis churn quantified. EXPLORATORY — digest_level: content | grade: Frontier | measures genre discipline, not truth.</span></figcaption>
+        </figure>
+
+        <h4>E7 · The slip velocity, with its IQR <span class="badge frontier">EXPLORATORY</span></h4>
+        <p class="small">The headline velocity ships only with its dispersion, by round-5 law: the median pairwise slip velocity is <strong>1.0 year per year with IQR [0.5, 4.25]</strong> — only 29% of flips sit at exactly 1.0, with 38% below and 33% above and a tail of 5&ndash;24 yr/yr jumps. The clean form is the <strong>consecutive-restatement subset</strong>: pairs of restatements one year apart (n = 38) recede at median 1.0 yr/yr (IQR [1.0, 6.0]; 55% at exactly 1.0), while pairs three or more years apart (n = 32) recede at median 0.4 yr/yr (IQR [0.4, 0.5]). The round-4 bootstrap CI of [1.0, 1.0] has been <strong>removed as a degenerate artifact</strong> — resampling dependent ratios made the discrete median&rsquo;s interval collapse to zero width; the corpse is serialized in the JSON as <span style="font-family:var(--mono); font-size:0.85em;">removed_degenerate_ci</span>.</p>
+        <div class="instrument" id="inst-e7">
+          <div class="inst-head"><span class="inst-sim">doctrine_dynamics</span> · E7-window-polarity-flip-dynamics · commit cff3988 · seed 42 · descriptive, no p-value by design</div>
+          <span class="readout"><span class="ac-id">Flip census</span> — observed <span class="num">n_flips=73 from n_window_rows=35, NON-INDEPENDENT (all-pairs structure; each row enters ~4 pairs)</span>, target <span class="target">descriptive ledger fact, not inference</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">Median overshoot of the violated bound</span> — observed <span class="num">2.0 years, ci95=[1.0, 2.0]; max 25.0</span>, target <span class="target">—</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">Median slip velocity, all pairs</span> — observed <span class="num">1.00 yr/yr, IQR [0.50, 4.25]; shares at/below/above 1.0 = 29/38/33%; tail 5–24 yr/yr</span>, target <span class="target">ships only with its IQR (r4/r5 ruling)</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">HEADLINE — consecutive-restatement subset (elapsed = 1 y)</span> — observed <span class="num">n=38, median 1.00 yr/yr, IQR [1.0, 6.0], 55% at exactly 1.0</span>, target <span class="target">clean form mandated by r4 advisor</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">Companion subset — elapsed &gt;= 3 y</span> — observed <span class="num">n=32, median 0.40 yr/yr, IQR [0.4, 0.5]</span>, target <span class="target">—</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">removed_degenerate_ci</span> — observed <span class="num">[1.0, 1.0] — REMOVED</span>, target <span class="target">degenerate bootstrap artifact over dependent ratios; not an uncertainty statement</span><span class="verdict-tag fail">CORPSE ON DISPLAY</span></span>
+          <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;Median slip velocity 1.00 yr/yr with IQR [0.50, 4.25] — only 29% of flips sit at exactly 1.0. HEADLINE (clean form): consecutive restatements (elapsed = 1 y, n = 38) recede at median 1.00 yr/yr; pairs with elapsed &gt;= 3 y (n = 32) recede at median 0.40 yr/yr. Descriptive ledger fact, not inference; no p-value by design.&rdquo;</div>
+          <div class="seed-foot">seed 42 · source: analysis/results/doctrine_dynamics_results.json · grade: Frontier · digest_level: content</div>
+        </div>
+        <div class="kill-strip"><span class="kill-label">Disclosure — always visible</span>n = 73 is non-independent (all-pairs ratios from 35 rows); every use of it carries this sentence. The two headline subsets sum to 70 pairs, leaving three elapsed = 2 y pairs (velocities 3.0&ndash;3.5) recoverable from the JSON definitions.</div>
+        <div class="link-rail"><a href="#inst-e7">instrument →</a><a href="#p2">P2, the uncertified rate →</a><a href="#docs">evidence layer →</a></div>
+      </section>
+    </main>
+
+    <aside class="margin-col">
+      <div class="margin-note">
+        <span class="mn-label">Calendar, not hedge</span>
+        The doctrine&rsquo;s escape hatch (&ldquo;readings of current energy&rdquo;) turns out not to be needed at the deadline: conditionality does not rise as the window closes. The window is simply re-issued — annually, on schedule.
+      </div>
+      <div class="margin-note">
+        <span class="mn-label">Why the IQR is law</span>
+        A median of 1.0 yr/yr with a collapsed [1.0, 1.0] interval would have been the cleanest-looking number on the page — and the falsest. The interval degenerated because the resampling plan ignored dependence. The panel removed it and kept the removal on display.
+      </div>
+      <div class="margin-thumb">
+        <img src="assets/fig_f3_drift.png" alt="Drift scatter thumbnail" loading="lazy">
+        <span class="cap">F3 · The line never certified</span>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- torn transition V : ink over olive -->
+<div class="torn" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+    <polygon fill="#191715" points="0,64 0,28 58,44 134,20 208,42 282,26 356,48 430,18 504,40 578,24 652,46 726,20 800,38 874,26 948,48 1022,22 1096,40 1170,18 1244,42 1318,28 1392,46 1440,34 1440,64"/>
+  </svg>
+</div>
+
+<!-- ================= PART IV — DOCTRINE DYNAMICS (ink) ================= -->
+<div class="section-ink" id="part-doctrine">
+  <div class="triptych">
+    <aside class="outline" aria-label="Doctrine outline">
+      <div class="outline-title">Doctrine Dynamics</div>
+      <details open>
+        <summary>A fixed vocabulary, liquid emphasis</summary>
+        <ul>
+          <li><a href="#doctrine">Liquid emphasis (E6/E8/E9)</a></li>
+          <li><a href="#contradictions">The flagged contradictions</a></li>
+          <li><a href="#plate34">Plate XXXIV</a></li>
+        </ul>
+      </details>
+    </aside>
+
+    <main class="article">
+      <div class="part-header" id="part-doctrine-head">
+        <span class="part-no">Part IV</span>
+        <h2>Doctrine Dynamics</h2>
+      </div>
+
+      <div class="house-rule fade-in">
+        Measures genre discipline, not truth<span class="hr-small">— the quietism banner, binding on every doctrinal statement below: consistency is descriptive corpus science, not evidence about origin.</span>
+      </div>
+
+      <section id="doctrine">
+        <h3>A fixed vocabulary with liquid emphasis</h3>
+        <p>The doctrinal network — <strong>126 nodes, 635 edges</strong> over the 104-term glossary (248 related-term edges plus 476 digest co-occurrence edges; density 0.081; a single connected component) — is stable in <em>vocabulary</em> but not in <em>emphasis</em>. Kendall&rsquo;s W of within-digest term-salience ranks is <strong>0.009</strong> overall (95% CI [0.007, 0.014]) — 0.013 in the early era (n = 8), 0.019 in the late era (n = 32) — meaning salience ranks are essentially uncorrelated across digests. Between consecutive digests, the rank correlation of the top-15 terms averages just <strong>+0.16</strong> and the top-5 turnover averages <strong>47%</strong>. The doctrine claims immutability and delivers churn — but churn of <em>emphasis</em>, never of lexicon. The era movers tell the same story in words: &ldquo;Highest excitement&rdquo; (Δ +1.16), &ldquo;formula&rdquo; (+1.09), &ldquo;Permission slip&rdquo; (+1.00), &ldquo;Open contact&rdquo; (+0.91) rise late; &ldquo;frequency&rdquo; (Δ &minus;1.13) and &ldquo;consciousness&rdquo; (&minus;0.75) fade.</p>
+
+        <figure class="plate" id="plate34">
+          <img src="assets/plate_doctrine_network.png" alt="Engraved celestial cartography plate: a dark circular firmament chart with a constellation of small engraved star-nodes connected by fine hairline arcs, densely webbed in the center, with a handful of stars drawn with small circular motion arrows showing them brightening and dimming in place, the chart resting on a wooden table beside brass dividers" loading="lazy">
+          <figcaption><span class="plate-no">Plate XXXIV — The Doctrine as a Firmament.</span><span class="plate-desc">The stars never move, only their brightness. Overlay, verbatim from the JSONs: 126 nodes · 635 edges; Kendall W &asymp; 0.009 — a fixed vocabulary with liquid emphasis; salience ranks uncorrelated across digests, and half the top-five terms turn over between consecutive digests. EXPLORATORY — descriptive | measures genre discipline, not truth.</span></figcaption>
+        </figure>
+
+        <figure class="plate">
+          <img src="assets/fig_f6_network.png" alt="Doctrine concept graph: glossary related-terms in amber and digest co-occurrence in copper, 126 concepts and 635 edges in a single connected component" loading="lazy">
+          <figcaption><span class="plate-no">F6 · The Concept Graph.</span><span class="plate-desc">Doctrine concept graph — glossary related-terms (amber) + digest co-occurrence (copper); 126 concepts, 635 edges, one component. &ldquo;Measures genre discipline, not truth&rdquo; is burned into the figure itself, as it is on every doctrine artifact. EXPLORATORY — digest_level: content | grade: Frontier.</span></figcaption>
+        </figure>
+        <figure class="plate">
+          <img src="assets/fig_f6b_term_movers.png" alt="Era movers: terms whose salience rose or fell between the early and late streaming eras" loading="lazy">
+          <figcaption><span class="plate-no">F6b · The Era Movers.</span><span class="plate-desc">Salience deltas, early (n = 8 digests, ≤ 2024) vs late (n = 32, ≥ 2025): excitement, formula, permission slip, and open contact rise; frequency and consciousness fade. The lexicon never changes; the emphasis never holds still. EXPLORATORY — descriptive.</span></figcaption>
+        </figure>
+
+        <div class="instrument" id="inst-e6">
+          <div class="inst-head"><span class="inst-sim">doctrine_graph</span> · E6-kendall-W-term-rank-stability · commit cff3988 · seed 42 · descriptive, no p-value by design</div>
+          <span class="readout"><span class="ac-id">E6 Kendall&rsquo;s W (tie-corrected), top-15 terms across 75 digests</span> — observed <span class="num">W=0.009167981784634712, ci95=[0.007374486931485871, 0.014102285275968414]</span>, target <span class="target">descriptive: low W = salience ranking varies by document</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">E8 W by era</span> — observed <span class="num">overall 0.0092; early (&lt;=2024, n=8) 0.0127; late (&gt;=2025, n=32) 0.0186</span>, target <span class="target">W &asymp; 0 in every slice</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">E9 consecutive-digest volatility</span> — observed <span class="num">39 adjacent pairs (37 defined, 2 constant-vector excluded); mean spearman=0.1639; mean top5 turnover=0.4667</span>, target <span class="target">high turnover + near-zero rank correlation = liquid emphasis</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;W &asymp; 0 in every slice: salience ranks are essentially uncorrelated across digests — the doctrine is a fixed vocabulary with liquid emphasis. Descriptive; no p-value by design.&rdquo;</div>
+          <div class="seed-foot">seed 42 · sources: analysis/results/doctrine_results.json + doctrine_dynamics_results.json · banner: measures genre discipline, not truth</div>
+        </div>
+      </section>
+
+      <section id="contradictions">
+        <h3>The flagged contradictions <span class="badge frontier">EXPLORATORY</span></h3>
+        <p>Four programmatic flags, disclosed in <span style="font-family:var(--mono); font-size:0.85em;">doctrine_results.json</span> — bookkeeping of a canon that claims immutability:</p>
+        <ul>
+          <li><strong>The 4-vs-5 Laws arity conflict.</strong> The glossary lists &ldquo;Four Laws of Creation&rdquo; (the older/parallel form) and &ldquo;Five Laws of Creation&rdquo; (the stated immutable set) as separate entries; teachings.md cites the four-law form 4 times and the five-law form once, while digests cite the five-law form. Found in at least two late-era digests, with a third digest undated — all three flagged year-unreliable in the ledger.</li>
+          <li><strong>The Shalanaya/Yahyel alias conflict.</strong> Digests cite &ldquo;Yahyel&rdquo; broadly (28 digests) while &ldquo;Shalanaya/Shalinaya&rdquo; survives in teachings.md (6 mentions vs 11) and the glossary — which records them as one race while noting fan sources that split them. The corpus&rsquo;s first-contact race carries two names and an unresolved identity.</li>
+          <li><strong>73 window-polarity flips</strong> — the Part-III census, double-flagged here because each flip is also a doctrinal event: the promised event moved past its own previously stated deadline.</li>
+          <li><strong>77 asymmetric related-term pairs</strong> — glossary edges not reciprocated by the glossary itself (Bashar&rarr;Essassani, Shalanaya&rarr;Yahyel among them): bookkeeping-level inconsistency, flagged, never smoothed over.</li>
+        </ul>
+        <p class="small dim">All doctrine outputs carry the quietism banner; advisor ruling 2b is binding on this section: consistency is descriptive corpus science, not evidence about origin — no origin-language appears in these outputs.</p>
+        <div class="link-rail"><a href="#inst-e6">instrument →</a><a href="#docs">evidence layer →</a></div>
+      </section>
+    </main>
+
+    <aside class="margin-col">
+      <div class="margin-note">
+        <span class="mn-label">Immutability, operationalized</span>
+        The doctrine claims its laws never change — and the lexicon agrees: the same 104 terms throughout. What the claim omits is emphasis: which five terms greet you this week is nearly a coin flip against last week.
+      </div>
+      <div class="margin-note">
+        <span class="mn-label">Why flag contradictions at all</span>
+        A canon&rsquo;s bookkeeping errors are not refutations of its metaphysics — the quietism banner bars that reading in both directions. They are measurements of genre discipline: how the story is kept.
+      </div>
+      <div class="margin-thumb">
+        <img src="assets/fig_f6_network.png" alt="Doctrine network thumbnail" loading="lazy">
+        <span class="cap">F6 · One component, 635 edges</span>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- torn transition VI : parchment over ink -->
+<div class="torn" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+    <polygon fill="#F4ECD8" points="0,64 0,38 70,24 145,44 220,20 295,42 370,30 445,48 520,26 600,40 675,18 750,44 825,28 900,46 975,22 1050,38 1125,50 1200,32 1275,16 1350,40 1420,28 1440,36 1440,64"/>
+  </svg>
+</div>
+
+<!-- ================= PART V — THE 2027 WATCH (light) ================= -->
+<div class="section-light" id="part-watch">
+  <div class="triptych">
+    <aside class="outline" aria-label="Watch outline">
+      <div class="outline-title">The 2027 Watch</div>
+      <details open>
+        <summary>The falsification pledge</summary>
+        <ul>
+          <li><a href="#rubric">The frozen rubric, verbatim</a></li>
+          <li><a href="#calibration">Retroactive calibration (E10)</a></li>
+          <li><a href="#near-miss">The near-miss review</a></li>
+          <li><a href="#plate36">Plate XXXVI</a></li>
+        </ul>
+      </details>
+    </aside>
+
+    <main class="article">
+      <div class="part-header" id="part-watch-head">
+        <span class="part-no">Part V</span>
+        <h2>The 2027 Watch</h2>
+      </div>
+      <p>Because the corpus makes a datable prediction, the panel pre-registered its falsification instrument <em>before</em> the outcome window. The rubric is frozen — timestamped at <span style="font-family:var(--mono); font-size:0.85em;">cff3988</span> — and quoted here in full. (Round-5 blocker B4 was an abridged quotation of this text labeled &ldquo;verbatim&rdquo;; the text below is the whole instrument.)</p>
+
+      <section id="rubric">
+        <div class="safety-banner">
+          <span class="sb-title">The Frozen Rubric — Verbatim, Timestamped cff3988</span>
+          <p><strong>Claim under test:</strong> &ldquo;open contact&rdquo; within the window currently stated as 2027 (in-corpus slips logged as ratchet events, never edits to the rubric). Scored blind to timing against the public record by a coder blind to the panel&rsquo;s drift results; only events after pre-registration count; retrospective re-interpretation never scores.</p>
+          <p><strong>Success (full):</strong> a national government or the UN formally confirms non-human intelligence and initiates a public diplomatic/communication exchange, OR a non-human craft/entity is publicly presented and independently verified by &ge;2 major scientific institutions, before 2030-01-01.</p>
+          <p><strong>Partial (tightened):</strong> an official government statement using explicit non-human-origin language (not &ldquo;unknown&rdquo;) about materials or craft, verified by a national laboratory or peer-reviewed analysis; or a mass-witnessed (&ge;1,000 independent witnesses), multi-instrument (&ge;2 independent instrument classes, e.g. radar + optical — not two cameras) event officially unresolved and endorsed as anomalous by &ge;2 national space/defense agencies.</p>
+          <p><strong>Failure:</strong> neither criterion met by 2030-01-01.</p>
+        </div>
+
+        <figure class="plate" id="plate36">
+          <img src="assets/plate_rubric_scorecard.png" alt="Engraved plate: a parchment scorecard under a glass vitrine sealed with red wax pressed with a key emblem, showing three rows marked with a laurel wreath, a half-laurel, and an empty circle, each followed by a blank ruled checkbox, with a small hourglass above whose sand is still in the upper bulb, and a historian's white glove and magnifier beside" loading="lazy">
+          <figcaption><span class="plate-no">Plate XXXVI — The Scorecard, Sealed Before the Window.</span><span class="plate-desc">Overlay (abridged summaries — the full verbatim text is on this page, § The Frozen Rubric): FULL — government/UN confirms NHI + public exchange, or verified craft by ≥2 scientific institutions, before 2030-01-01 · PARTIAL — explicit non-human-origin statement, lab/peer-reviewed verified; or mass-witnessed multi-instrument event endorsed by ≥2 agencies · FAILURE — neither by 2030-01-01 · retroactive calibration baseline: historical pass rate 0/2 — rubric frozen regardless of outcome (no-tuning clause). Pre-registered | rubric frozen — no tuning; EXPLORATORY calibration twin F8 carries its own badge.</span></figcaption>
+        </figure>
+      </section>
+
+      <section id="calibration">
+        <h3>The retroactive calibration — stress-tested before it matters <span class="badge frontier">EXPLORATORY</span></h3>
+        <p>Round 5 applied the frozen rubric, unchanged, to the ledger&rsquo;s historical dated claims under a pre-specified protocol: a deterministic eligibility screen, then blind-ish scoring in which claim text sets only the deadline while the outcome is looked up from a frozen public-record fact table. Of 164 ledger rows, <strong>2 resolved open-contact claims</strong> were scorable — the 2020 window start (&ldquo;original contact window start mentioned; later narrowed to 2027&rdquo;) and the 2025 &ldquo;early markers&rdquo; claim — and both score <strong>failure</strong>: historical pass rate <strong>0/2</strong>, Clopper&ndash;Pearson 95% <strong>[0.000, 0.842]</strong> — descriptive annotation only; ledger rows are doctrinally correlated, no independence claimed. <strong>Fifty-five open-window claims</strong> (including every 2026/27 claim) are disclosed as not yet scorable, and the 2016 cluster — documentary premieres and &ldquo;everything will change&rdquo; rhetoric — passes through the screen and is excluded with reasons (13 rows: 5 event logistics, 8 not-open-contact).</p>
+        <p>The honest reading: the rubric has perfect historical <em>specificity</em> — no event in the public record has ever satisfied it — while its <em>sensitivity</em> is unknowable from a history containing no true positive. <strong>The thinness is the finding</strong>: the resolved cohort is small (n = 2) precisely because the doctrine keeps its windows open — itself a datum. The baseline for the 2027 watch is therefore this: a full or partial score at the deadline would be unprecedented against the corpus&rsquo;s entire dated-claim history, and a failure continues the documented base rate.</p>
+
+        <div class="instrument" id="inst-e10">
+          <div class="inst-head"><span class="inst-sim">rubric_calibration</span> · E10-retroactive-rubric-calibration · commit cff3988 · corpus cutoff 2026-06-30 · deterministic; no stochastic steps</div>
+          <span class="readout"><span class="ac-id">Resolved cohort, scored under the frozen rubric</span> — observed <span class="num">n_ledger_rows=164; n_resolved_scored=2; score_tally={failure: 2}</span>, target <span class="target">pre-specified screen S1–S5, blind-ish fact-table lookup</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">Historical pass rate (full + partial)</span> — observed <span class="num">0/2 = 0.0; Clopper–Pearson 95% [0.000, 0.842], ci95=[0.0, 0.841886116991581]</span>, target <span class="target">descriptive annotation only; doctrinal correlation, no independence claimed</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">Open windows disclosed, unscored</span> — observed <span class="num">55 (including every 2026/27 claim)</span>, target <span class="target">disclosed, never silently dropped</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <span class="readout"><span class="ac-id">Screen exclusions</span> — observed <span class="num">event_logistics=8, no_deadline=13, not_contact=83, historical_reference=3; 2016 cluster: 13 rows (5 logistics / 8 not-contact)</span>, target <span class="target">scope discipline is part of what is calibrated</span><span class="verdict-tag info">EXPLORATORY</span></span>
+          <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;The calibration establishes the rubric&rsquo;s historical SPECIFICITY (no false positives on the past); sensitivity is UNKNOWABLE from history because no true open-contact event exists to detect. HARD NO-TUNING CLAUSE (r4 advisor constraint, binding): the frozen 2027 rubric may not be edited after this calibration is scored, whatever it shows — a rubric fitted to the past is worthless for 2027.&rdquo;</div>
+          <div class="seed-foot">seed 42 · source: analysis/results/rubric_results.json · grade: Frontier · digest_level: content</div>
+        </div>
+        <div class="kill-strip"><span class="kill-label">No-tuning clause — binding</span>The frozen 2027 rubric may not be edited after this calibration is scored, whatever it shows. The clause is embedded in the code, the results JSON, and the analysis README. A rubric that misclassifies the past is a finding about the rubric, published as such — never a license to tune.</div>
+      </section>
+
+      <section id="near-miss">
+        <h3>The near-miss review — why specificity is perfect</h3>
+        <p class="small">The serialized review of the public record&rsquo;s closest approaches, each failing the frozen criteria for a stated reason:</p>
+        <div class="table-wrap">
+          <table class="gold">
+            <thead>
+              <tr><th>Event</th><th>Why it fails the frozen rubric</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="rownum">2017</td><td>NYT AATIP/ATI disclosure + Navy videos — language was &ldquo;unknown/unidentified,&rdquo; never explicit non-human-origin; no national-laboratory or peer-reviewed verification → fails tightened partial; no diplomatic exchange → fails full.</td></tr>
+              <tr><td class="rownum">2021</td><td>ODNI UAP preliminary assessment — &ldquo;unidentified,&rdquo; officially unresolved but NOT endorsed as anomalous by &ge;2 national space/defense agencies; no instrument-class-verified mass event → fails partial.</td></tr>
+              <tr><td class="rownum">2022–23</td><td>US congressional UAP hearings (incl. Grusch testimony) — sworn testimony is not an official government statement of non-human origin; no national-lab or peer-reviewed verification of materials → fails partial.</td></tr>
+              <tr><td class="rownum">2024</td><td>AARO Historical Record Report vol. 1 — affirmatively reports NO non-human-origin evidence, the opposite of the required explicit language → fails partial and full.</td></tr>
+              <tr><td class="rownum">1952 / 1997</td><td>Historical mass-sighting waves (Washington; Phoenix) — no official endorsement as anomalous by &ge;2 national space/defense agencies; no explicit non-human-origin statement → fail partial.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="plate">
+          <img src="assets/fig_f8_rubric_calibration.png" alt="Retroactive calibration scatter: historical ledger claims by stated window upper bound, resolved and scored claims marked failure, open windows disclosed at the corpus cutoff" loading="lazy">
+          <figcaption><span class="plate-no">F8 · The Calibration, Mapped.</span><span class="plate-desc">Retroactive calibration of the frozen 2027 rubric on historical dated ledger claims: resolved claims n = 2 — full 0, partial 0, failure 2 (historical pass rate 0/2); rubric frozen regardless of outcome (no-tuning clause). The dashed line is the corpus cutoff, 2026-06-30; the open-window mass to its right is the 55-claim disclosure. EXPLORATORY — digest_level: content | grade: Frontier | descriptive calibration (round 5); rubric frozen — no tuning.</span></figcaption>
+        </figure>
+        <div class="link-rail"><a href="#inst-e10">instrument →</a><a href="#rubric">the frozen text →</a><a href="#docs">evidence layer →</a></div>
+      </section>
+    </main>
+
+    <aside class="margin-col">
+      <div class="margin-note">
+        <span class="mn-label">Why freeze before the window</span>
+        A falsification pledge written after the outcome is a horoscope. This one is timestamped at the freeze hash, blind-scored at the deadline, and forbidden — by a clause with teeth — from learning from its own calibration.
+      </div>
+      <div class="margin-note">
+        <span class="mn-label">What a pass would mean</span>
+        Under the quietism banner, even a full score at the deadline would be a measurement of the public record, not a verdict on origin. But against a 0/2 historical base rate, it would be unprecedented — and a failure continues the documented pattern. Both outcomes are publishable; the instrument doesn&rsquo;t care which arrives.
+      </div>
+      <div class="margin-thumb">
+        <img src="assets/fig_f8_rubric_calibration.png" alt="Rubric calibration thumbnail" loading="lazy">
+        <span class="cap">F8 · 0/2, and why n = 2 is the datum</span>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- torn transition VII : deep olive over parchment -->
+<div class="torn" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+    <polygon fill="#2F3D29" points="0,64 0,26 55,40 120,20 190,46 260,28 335,44 405,16 480,38 555,24 630,48 705,30 780,18 855,42 930,26 1005,44 1080,34 1155,50 1230,24 1300,40 1370,22 1440,34 1440,64"/>
+  </svg>
+</div>
+
+<!-- ================= PART VI — WHAT REMAINS BLOCKED (olive) ================= -->
+<div class="section-olive" id="part-blocked">
+  <div class="triptych">
+    <aside class="outline" aria-label="Blocked outline">
+      <div class="outline-title">What Remains Blocked</div>
+      <details open>
+        <summary>The blocked arm</summary>
+        <ul>
+          <li><a href="#blocked">Acquisition, failed honestly</a></li>
+          <li><a href="#registered-report">The registered-report plan</a></li>
+          <li><a href="#channeling-science">The channeling-science context</a></li>
+        </ul>
+      </details>
+    </aside>
+
+    <main class="article">
+      <div class="part-header" id="part-blocked-head">
+        <span class="part-no">Part VI</span>
+        <h2>What Remains Blocked</h2>
+      </div>
+
+      <section id="blocked">
+        <h3>The authorship question — blocked, not fabricated</h3>
+        <p>The one question that would bear most directly on the corpus&rsquo;s central claim — is Bashar-era text stylistically distinguishable from Anka-era text? — requires real transcripts, and the panel&rsquo;s build environment has <strong>no network egress</strong>. The acquisition pilot (<span style="font-family:var(--mono); font-size:0.85em;">acquisition.py</span>) fails per-ID with logged timeouts, and <strong>no transcript text was fabricated</strong>. The blockage is serialized like any other result:</p>
+        <div class="instrument" id="inst-acq">
+          <div class="inst-head"><span class="inst-sim">acquisition</span> · pilot mode · commit cff3988 · grade: Speculative · digest_level: transcript</div>
+          <span class="readout"><span class="ac-id">Planned targets</span> — observed <span class="num">75 (the full digested corpus)</span>, target <span class="target">pre-registered transcript list</span><span class="verdict-tag info">PLANNED</span></span>
+          <span class="readout"><span class="ac-id">Pilot attempts</span> — observed <span class="num">94agFEADfyk: timeout after 45s</span>, target <span class="target">fetch via youtubetotranscript.com</span><span class="verdict-tag fail">BLOCKED</span></span>
+          <span class="readout"><span class="ac-id">Transcripts fetched</span> — observed <span class="num">0</span>, target <span class="target">—</span><span class="verdict-tag fail">BLOCKED</span></span>
+          <div class="inst-verdict"><span class="says">The instrument says:</span>&ldquo;network/egress blocked or source unreachable (first failure: 94agFEADfyk: timeout after 45s). No transcript text was fabricated. Where fetching failed, the failure is logged per-ID above. Stylometry (Q3) remains BLOCKED until real transcripts pass the WER audit.&rdquo;</div>
+          <div class="seed-foot">seed 42 · source: analysis/results/acquisition_results.json · grade: Speculative · digest_level: transcript</div>
+        </div>
+        <figure class="plate">
+          <img src="assets/plate_stylometry_pipeline.png" alt="Engraved plate of a stylometry pipeline in three registers: manuscript transcript sheets feeding a small waterwheel, a row of apothecary jars holding sorted blank word-tiles, and the jars tipping into a delicate balance scale, with a broken link in the chain between the first and second register drawn as a snapped chain with a small padlock" loading="lazy">
+          <figcaption><span class="plate-no">Plate XXXII — The Authorship Arm, Frozen Mid-Pipeline.</span><span class="plate-desc">Transcripts (BLOCKED — network egress) → function-word vectors → cross-entropy classifier, ΔCE per token. The snapped chain is drawn into the artwork itself: the classifier never runs because the transcripts never arrive. The protocol, WER gates, and power contingency ship as a registered report instead. Speculative | status: BLOCKED, registered-report fallback. No transcript was fabricated.</span></figcaption>
+        </figure>
+      </section>
+
+      <section id="registered-report">
+        <h3>The registered report — the protocol is the deliverable</h3>
+        <p>When the data cannot ship, the protocol ships, pre-committed so that no future result can be silently re-aimed:</p>
+        <ul>
+          <li><strong>The target list</strong> — the 75-video digested corpus, archived raw text + per-file metadata with a SHA-256 manifest.</li>
+          <li><strong>The WER gates</strong> — 15% overall / 10% function-word word-error-rate ceilings on a 12-transcript stratified sample (4 interviews, 4 sessions, 4 archive.org), with a <strong>mandatory Whisper hallucination screen</strong>: low-audio-energy spans with high text output are flagged and excluded, because the model invents fluent text in low-signal regions. Disclosed in advance (advisor ruling e): on 1984–96 cassette audio these gates are optimistic; the pass-only-spans fallback induces era/audio-quality selection bias, and the era-extension arm may degrade to descriptive.</li>
+          <li><strong>The 6+6 matched-pair pilot</strong> — whose empirical per-document &Delta;CE variance must replace the panel&rsquo;s earlier asserted power statement <em>before</em> any stylometry claim runs. The &Delta;CE &ge; 0.15 nats/token figure is demoted to a target detectable effect, gated on that measured variance.</li>
+        </ul>
+        <p class="small dim">With egress, in order: run the acquisition for real; pull channel metadata (view/subscriber counts, upload cadence) to give the demand sociology the outcome variable it currently lacks; then fetch one external prophecy corpus to ask whether the 1.0 yr/yr slip velocity and liquid-emphasis signature are generic to the genre or specific to this doctrine.</p>
+        <div class="link-rail"><a href="#inst-acq">instrument →</a><a href="#docs">evidence layer →</a></div>
+      </section>
+
+      <section id="channeling-science">
+        <h3>The channeling-science context — precedent, not evidence</h3>
+        <p>Channeling is not unstudied; the published record is thin, small-n, and honest about it. Two anchors, graded as external literature — <strong>not part of this corpus</strong>:</p>
+        <ul>
+          <li><strong>Peres, Moreira-Almeida, Newberg et al. 2012</strong> (<em>PLoS ONE</em> 7(11):e49360) — the one published neuroimaging precedent for trance writing: ten Brazilian psychographic mediums (five experienced, five less expert), SPECT during psychography versus each medium&rsquo;s own non-trance writing — a within-subject control, no separate control group. <strong>Experienced mediums showed decreased frontal rCBF (hypofrontality) during trance</strong> — in the left hippocampus, anterior cingulate, right superior temporal and precentral gyri — while producing text rated <em>more</em> complex than their control writing; the increased-activity pattern appeared only in the less-expert subgroup. A mundane candidate mechanism exists (automatized fluency plus reduced self-monitoring — the same frontal hypofrontality signature appears in jazz-improvisation studies). Grade: Frontier — real data, n = 10, unreplicated in thirteen years. (Round-5 blocker B5 was a folio plate that inverted this finding and invented a control group; the corrected caption is this paragraph.)</li>
+          <li><strong>Wahbeh, Cannard, Okonsky &amp; Delorme 2019</strong> (IONS; <em>F1000Research</em> 8:67) — the most controlled physiological study of trance channeling to date: thirteen channelers, within-subject channeling/no-channeling blocks, EEG + ECG + GSR + respiration + voice. Result: voice parameters differed; <strong>no substantive differences in EEG frequency power, ECG, GSR, or respiration</strong>; self-rated trance depth moderate (47.7 &plusmn; 33.6 on 0&ndash;100). The honest headline: the state is subjectively vivid, vocally distinct, and physiologically near-invisible on standard measures. Grade: Frontier.</li>
+        </ul>
+        <p>The context cuts both ways under the quietism banner: hypofrontality is not evidence of contact, and a physiological null is not evidence against the experience. What neither study does is measure a corpus&rsquo;s promises — which is the instrument this folio adds.</p>
+        <figure class="plate">
+          <img src="assets/plate_spect_study.png" alt="Dark archival 3D render of a clinical side-room staged as a psychography study: a medium writing at a desk in the foreground, an instrument trolley with a chart recorder, the gantry ring of a SPECT gamma camera visible through a lead-glass window behind, and a second writing desk with an empty chair in the far background for the within-subject non-trance control condition" loading="lazy">
+          <figcaption><span class="plate-no">Plate XXXV — The Psychography Study, as Precedent.</span><span class="plate-desc">Within-subject SPECT psychography design (Peres et al., 2012, external literature): the second desk in the background is the control — each medium&rsquo;s own non-trance writing, not a separate group. Experienced mediums showed DECREASED frontal rCBF during psychography; the increase belonged to the less-expert subgroup. Panel status: external precedent only — not part of this corpus. Grade: Speculative (external-study depiction).</span></figcaption>
+        </figure>
+        <div class="link-rail"><a href="#blocked">the blocked arm →</a><a href="#docs">evidence layer →</a></div>
+      </section>
+    </main>
+
+    <aside class="margin-col">
+      <div class="margin-note">
+        <span class="mn-label">Why blocked is a section, not a footnote</span>
+        The cheapest move in this genre is to fill the gap with prose. The panel ships the empty chair instead: the failure logged per-ID, the gates pre-committed, the power statement demoted until the pilot measures it.
+      </div>
+      <div class="margin-note">
+        <span class="mn-label">The corridor of readable outcomes</span>
+        Authorship verification is the easiest form of stylometry, and channeled corpora are large and dated — a genuinely doable, never-done measurement whose result is informative in the negative direction too. It waits on egress, not on argument.
+      </div>
+      <div class="margin-thumb">
+        <img src="assets/plate_spect_study.png" alt="SPECT study render thumbnail" loading="lazy">
+        <span class="cap">XXXV · Precedent, not evidence</span>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- torn transition VIII : ink over olive -->
+<div class="torn" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+    <polygon fill="#191715" points="0,64 0,32 66,18 140,42 214,26 288,48 362,20 436,38 510,24 584,46 658,22 732,40 806,18 880,44 954,28 1028,46 1102,20 1176,42 1250,26 1324,44 1398,30 1440,38 1440,64"/>
+  </svg>
+</div>
+
+<!-- ================= DOCS + HOUSE RULE + FOOTER (ink) ================= -->
+<section class="section-ink" id="docs">
+  <div class="wrap wrap-narrow">
+    <span class="kicker fade-in">Docs &amp; Reproducibility</span>
+    <h2 class="display-md fade-in">The evidence layer</h2>
+    <p class="fade-in" style="max-width:44rem; margin-top:1.2rem; color:var(--parchment-dim);">Every statistic on this page was re-run end-to-end at <strong>seed 42</strong> in round 5 against the frozen repository snapshot (git HEAD <span style="font-family:var(--mono); font-size:0.85em;">cff3988</span>), with 10,000 bootstrap and permutation resamples on every stochastic procedure. The machine-readable evidence layer — <span style="font-family:var(--mono); font-size:0.85em;">analysis/results/*.json</span>, plus the downloadable 164-row <span style="font-family:var(--mono); font-size:0.85em;">ledger.csv</span> — is the source of truth for every number quoted here, each serialized with its provenance block. Figures F1&ndash;F8 carry their badge, their n, and their digest-level inside the image itself; no figure carries a p-value in its title except with its badge.</p>
+    <div class="manifesto-grid fade-in" style="margin-top:2.4rem;">
+      <div class="lead-col">
+        <h4>What ships</h4>
+        <p class="small" style="font-family:var(--mono); font-size:0.72rem; line-height:2.1; letter-spacing:0.04em;">
+          analysis/results/predictions_results.json — P1/P2 + E1–E3, the slip chain<br>
+          analysis/results/demand_results.json — P3/P4 + E4/E5, the residual directions<br>
+          analysis/results/doctrine_results.json — graph, Kendall W, contradiction flags<br>
+          analysis/results/doctrine_dynamics_results.json — E7–E9, the flip dynamics<br>
+          analysis/results/rubric_results.json — E10, frozen rubric + calibration<br>
+          analysis/results/acquisition_results.json — the blocked arm, logged honestly<br>
+          analysis/results/family_holm.json — the family verdict<br>
+          analysis/results/ledger.csv — 164 dated claims, downloadable<br>
+          analysis/figures/fig_f1…f8.png — badged, on this page
+        </p>
+      </div>
+      <div class="side-col" style="border-left:1px solid var(--hairline); padding-left:2rem;">
+        <h4>What does not ship</h4>
+        <p class="small dim">The decorative 10<sup>-175</sup> without its pseudo-replication caveat. Any &ldquo;honest forecasting&rdquo; sentence. Any unbadged exploratory claim. Any version of the slip-velocity headline without its IQR. Any &ldquo;248-term glossary.&rdquo; Any abridged quotation labeled verbatim. And no fabricated transcript, ever — the blocked arm stays blocked until real text passes the WER gates.</p>
+      </div>
+    </div>
+
+    <div class="house-rule fade-in" style="margin-top:3.6rem;">
+      This folio measures genre discipline, not truth<span class="hr-small">— nothing here speaks to the origin of the material, and no result is evidence for or against any claim about non-human intelligence. What is measured is how the promise behaves — and on that, the corpus has been remarkably forthcoming.</span>
+    </div>
+    <div class="pullquote fade-in" style="margin-top:3.4rem;">
+      The prophecy&rsquo;s deadlines fail on schedule, the packaging predicts the content, the vocabulary never changes while the emphasis never holds still — and the instrument that could settle the truth of it is frozen, published, and waiting for 2027.
+      <span class="attribution">The Bashar-Index Panel · Final Report §8 · the honest sentence</span>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-epigraph">
+    <blockquote>&ldquo;The first principle is that you must not fool yourself — and you are the easiest person to fool.&rdquo;</blockquote>
+    <span class="cite">R. P. Feynman — <a href="https://calteches.library.caltech.edu/51/2/CargoCult.htm">Cargo Cult Science</a>, 1974</span>
+  </div>
+  <div class="footer-meta">
+    <span>Resonant Vessels · Folio X — The Channeled Corpus</span>
+    <span>Grades versioned · Re-grades logged publicly</span>
+    <span><a href="lab.html">Prev: The Sound Laboratory</a> · <a href="index.html">Index</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
