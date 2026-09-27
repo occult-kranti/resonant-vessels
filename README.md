@@ -2,6 +2,10 @@
 
 A static research archive exploring resonance, Newton's chymistry, historical symbolism and speculative claims through named sources, explicit models and controls. This repository was a first attempt; its interpretations and inherited numerical claims are being corrected rather than treated as established discoveries.
 
+## Electricity, magnetism and force claims — September 2026 continuation
+
+Open [research-continuation.html](research-continuation.html) for the new five-round continuation: two preserved sound checkpoints followed by the user-directed shift to electrical energy, magnetic forces and antigravity-claim tests. The [interactive bench](https://occult-kranti.github.io/resonance-research-atlas/sound-lab/field-notes.html) contains the controls, calculations, setup diagrams and exact review records. These are new, separately reproduced investigations; the inherited six simulation families below retain their earlier status.
+
 ## Research revision — 26 September 2026
 
 Start with [research-corrections.html](research-corrections.html). It records the changed assertions, a process-specific Newton interpretation table, sources actually read, an exact inverse-mixture example and the next research gates.
